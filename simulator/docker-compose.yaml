@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    container_name: simulator
+    volumes:
+      # pasta que sera compartilhada entre o container e o computador
+      - .:/go/src/
+    extra_hosts:
+      # o que permite a comunicacao entre diversos sistemas que estao em redes diferentes
+      - "host.docker.internal:172.17.0.1"
