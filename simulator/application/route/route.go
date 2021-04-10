@@ -3,7 +3,7 @@ package route
 import ("bufio"
 		"encoding/json"	
 		"errors"
-		 "os"
+		"os"
 		"strconv"
 		"strings")
 
@@ -22,7 +22,7 @@ type Position struct{
 // struct com a forma do json que precisamos entregar para o Kafka
 type PartialRoutePosition struct {
 	// o go tem o recurso de tags que facilita a conversao para json
-	ID string `json:"RouteId"`
+	ID string `json:"routeId"`
 	ClientID string `json:"clientId"`
 	Position []float64 `json:"position"`
 	Finished bool `json:"finished"`// toda vez que for a ultima posicao o frontend sabera que a corrida encerrou
