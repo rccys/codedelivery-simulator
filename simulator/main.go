@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	route2 "github.com/rccys/codedelivery-simulator/simulator/application/route"
+	route "github.com/rccys/codedelivery-simulator/simulator/application/route"
 )
 
 func main() {
-	route := route2.Route{
+	route := route.Route{
 		ID: "1",
 		ClientID: "1",
 	}
